@@ -1,0 +1,17 @@
+// ./Logs/LogFile.txt or \Logs\LogFile.txt depending on OS.
+
+
+string path = Path.Combine(".", "Logs");
+string fullFile = Path.Combine(path, "LogFile.txt");
+
+Directory.CreateDirectory(path);
+
+List<string> logs = new List<string>
+{
+  "First Line of Text",
+  "Second Line of Text,
+  "Third Line of Text"
+};
+
+File.WriteAllLines(FullFile, Logs);
+
