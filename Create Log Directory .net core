@@ -13,5 +13,5 @@ List<string> logs = new List<string>
   "Third Line of Text"
 };
 
-File.WriteAllLines(FullFile, Logs);
+File.WriteAllLines(FullFile, logs);
 
